@@ -1,0 +1,25 @@
+@startuml CLUB_DE_DEPORTES
+
+title "Diagrtama Entidad-Relación (DER) - Club de deportes"
+
+hide circle
+
+entity "Socio" as socio {
+    * num_socio : INTEGER <<PK>>
+    --
+    * nombre : VARCHAR(30)
+    * apellido : VARCHAR(30)
+    * dni : VARCHAR(30)
+    * fk_codigo : INTEGER <<FK>>
+}
+
+entity "Deporte" as deporte {
+    * codigo : INTEGER <<PK>>
+    --
+    * nombre : VARCHAR(30)
+    * es_grupal : BOOLEAN
+}
+
+socio "n" ---* "1" deporte
+
+@enduml
