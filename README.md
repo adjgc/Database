@@ -24,6 +24,18 @@ Este ejercicio consiste en el modelado de un club donde los socios se inscriben 
 * Listar a todos los socios que practiquen Tenis.
 * Contar a todos los socios que practiquen Fútbol.
 
+### 2. Sistema de Gestión de Tienda de informática (infotienda)
+Este ejercicio consiste en el modelado de una tienda de productos de informática y su relación con los fabricantes.
+
+#### Actividades
+
+* Agregar al menos 10 productos.
+* Agregar al menos 3 fábricas.
+* Listar todos los productos ordenados de menor a mayor precio.
+* Listar todas las fábricas ordenadas por nombre ascendente.
+* Obtener el nombre y precio de los productos con valor mayor a 300.
+* Obtener el nombre y precio del producto de menor precio.
+
 ### 🚀 Próximamente...
 [!NOTE]
 Este repositorio está en constante actualización. Próximamente añadiré ejercicios sobre:
@@ -34,4 +46,4 @@ Este repositorio está en constante actualización. Próximamente añadiré ejer
 
 #### Procedimientos almacenados y Triggers.
 
-##### Desarrollado por: ADJGC
+#### Desarrollado por: [ADJGC](https://www.linkedin.com/in/adjgc/)
