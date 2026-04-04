@@ -1,0 +1,23 @@
+@startuml TIENDA_DE_INFORMATICA
+title "Diagrama Entidad-Relación (DER) - Tienda de informática"
+
+hide circle
+
+entity "Producto" as producto {
+    * codigo: INTEGER <<PK>>
+    --
+    * nombre: VARCHAR(30)
+    * precio: DOUBLE
+    * fk_codigo_fabrica: INTEGER <<FK>>
+}
+
+entity "Fábrica" as fabrica {
+    * codigo: INTEGER <<PK>>
+    --
+    * nombre: VARCHAR(30)
+    * direccion: VARCHAR(50)
+}
+
+producto "n"---"1" fabrica
+
+@enduml
