@@ -1,0 +1,24 @@
+@startuml VETERINARIA
+title "Diagrama Entidad-Relación (DER) - Veterinaria"
+
+hide circle
+
+entity "Paciente" as paciente {
+    id_paciente: INTEGER <<PK>>
+    --
+    nombre_paciente: VARCHAR(30)
+    fecha_nacimiento: DATE,
+    especie: VARCHAR(15)
+}
+
+entity "Tratamiento" as tratamiento {
+    id_tratamiento: INTEGER <<PK>>
+    --
+    id_paciente: INTEGER <<FK>>
+    tipo_tratamiento: VARCHAR(50)
+    fecha_tratamiento: DATE
+}
+
+paciente "1" --- "n" tratamiento
+
+@enduml
