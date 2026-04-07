@@ -53,7 +53,7 @@ Base de datos para gestionar a los participantes de un torneo de tenis, organiza
 #### ✅ Actividades
 - [x] Agregar al menos 30 participantes (uso sugerido de un procedimiento almacenado).
 - [x] Agregar una inscripción por cada participante.
-- [ ] Contar la cantidad total de participantes..
+- [ ] Contar la cantidad total de participantes.
 - [ ] Obtener la lista completa de todos los participantes.
 - [ ] Obtener la lista completa de todas las categorías.
 - [ ] Obtener la cantidad de participantes mujeres sin importar la categoría.
