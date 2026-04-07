@@ -1,0 +1,40 @@
+@startuml TORNEO_DE_TENIS
+
+title "Diagrama Entidad-Relación (DER) - Torneo de tenis"
+
+hide circle
+
+entity "Participante" as participante {
+    id_participante: INTEGER <<PK>>
+    --
+    dni_participante: VARCHAR(15)
+    nombre: VARCHAR(30)
+    apellido: VARCHAR(30)
+    direccion: VARCHAR(50)
+    edad: INTEGER
+    telefono: VARCHAR(10)
+    sexo: VARCHAR(1)
+}
+
+entity "Categoria" as categoria {
+    id_categoria: INTEGER <<PK>>
+    --
+    nombre: VARCHAR(30)
+    edad_minima: INTEGER
+    edad_maxima: INTEGER
+    sexo: VARCHAR(1)
+}
+
+entity "Inscripcion" as inscripcion {
+    id_inscripcion: INTEGER <<PK>>
+    --
+    fecha_inscripcion: DATE
+    abono_inscripcion: BOOLEAN
+    id_categoria: INTEGER <<FK>>
+    id_participante: INTEGER <<FK>>
+}
+
+participante "1" --- "1" inscripcion
+inscripcion "n" --- "1" categoria
+
+@enduml
