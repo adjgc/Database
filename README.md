@@ -47,6 +47,21 @@ Gestión de historial clínico, enfocada en la relación entre pacientes (mascot
 - [ ] Contar tratamientos de un paciente entre un rango de fechas.
 - [ ] Identificar al paciente con mayor actividad clínica.
 
+### 4. Gestor para torneo de tenis (`torneo_de_tenis`)
+Base de datos para gestionar a los participantes de un torneo de tenis, organizando por categorías
+
+#### ✅ Actividades
+- [x] Agregar al menos 30 participantes (uso sugerido de un procedimiento almacenado).
+- [x] Agregar una inscripción por cada participante.
+- [ ] Contar la cantidad total de pacientes.
+- [ ] Obtener la lista completa de todos los participantes.
+- [ ] Obtener la lista completa de todas las categorías.
+- [ ] Obtener la cantidad de participantes mujeres sin importar la categoría.
+- [ ] Obtener el nombre y apellido de los participantes inscritos en la categoría "Caballeros B".
+- [ ] Obtener los datos de los participantes que tengan entre 25 y 37 años.
+- [ ] Obtener la lista completa de inscripciones, especificando el nombre y apellido de cada uno de los inscritos.
+
+
 ---
 
 ## 🚀 Próximamente...
