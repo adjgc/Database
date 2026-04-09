@@ -1,0 +1,38 @@
+@startuml ESCUELA_DE_MUSICA
+
+title "Diagrama Entidad-Relación (DER) - Escuela de música"
+
+hide circle
+
+entity "Alumno" as alumno {
+    id_alumno: INTEGER <<PK>>
+    --
+    nombre: VARCHAR(30)
+    apellido: VARCHAR(30)
+    edad: INTEGER
+    direccion: VARCHAR(50)
+    telefono: VARCHAR(10)
+    email: VARCHAR(30)
+}
+
+entity "Curso" as curso {
+    id_curso: INTEGER <<PK>>
+    --
+    nombre: VARCHAR(30)
+    nivel_habilidad: VARCHAR(15)
+    tipo_instrumento: VARCHAR(20)
+}
+
+entity "Inscripcion" as inscripcion {
+    id_inscripcion: INTEGER <<PK>>
+    --
+    fecha_inscripcion: DATE
+    abono_inscripcion: BOOLEAN
+    id_alumno: INTEGER <<FK>>
+    id_curso: INTEGER <<FK>>
+}
+
+alumno "1" --- "1" inscripcion
+curso "1" --- "n" inscripcion
+
+@enduml
