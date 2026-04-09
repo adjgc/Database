@@ -1,4 +1,4 @@
-# 📚 Prácticas de Bases de Datos - ADJGC
+# 📚 Prácticas de Bases de Datos - [ADJGC](https://www.linkedin.com/in/adjgc/)
 
 Este repositorio contiene una colección de ejercicios y prácticas sobre modelado de bases de datos, diseño de **Diagramas Entidad-Relación (DER)** y sentencias **SQL**.
 
@@ -9,13 +9,25 @@ El objetivo es documentar mi proceso de aprendizaje y mantener una referencia t�
 ## 🛠️ Tecnologías y Herramientas
 * **Modelado:** [PlantUML](https://plantuml.com/)
 * **Motor de DB:** SQL (MySQL)
-* **Entorno:** CachyOS (Linux)
+* **Entorno:** DataGrip (JetBrains)
 
 ---
 
-## 📂 Ejercicios Realizados
+## 📖 Contenido
 
-### 1. Sistema de Gestión de Club (`club_deportes`)
+* **Relaciones Uno a Uno:** Implementación de tablas simples.
+* **Relaciones Uno a Muchos:** Implementación de tablas básicas.
+* **Relaciones Muchos a Muchos:** Implementación de tablas intermedias.
+* **Consultas Básicas:** Uso de `SELECT`, `FROM`, `WHERE` para consultas y filtros.
+* **Agrupación y ordenamiento:** Agrupación, conteo y ordenamiento de elementos con cláusulas `GROUP BY` y `ORDER BY`.
+* **Consultas Avanzadas:** Uso intensivo de `JOINs` y Subconsultas.
+* **Lógica en BD:** Procedimientos almacenados (`Stored Procedures`) y `Triggers`.
+
+---
+
+## ⚒️ Ejercicios Realizados
+
+### 1. Sistema de Gestión de Club (`📂 club_de_deportes`)
 Modelado de un club deportivo donde se gestiona la inscripción de socios en diferentes disciplinas.
 
 #### ✅ Actividades
@@ -26,7 +38,7 @@ Modelado de un club deportivo donde se gestiona la inscripción de socios en dif
 - [ ] Listar a todos los socios que practiquen Tenis.
 - [ ] Contar a todos los socios que practiquen Fútbol.
 
-### 2. Tienda de Informática (`infotienda`)
+### 2. Tienda de Informática (`📂 tienda_informatica`)
 Diseño de una base de datos para una tienda de hardware, gestionando la relación entre productos y sus fabricantes.
 
 #### ✅ Actividades
@@ -37,7 +49,7 @@ Diseño de una base de datos para una tienda de hardware, gestionando la relaci�
 - [ ] Filtrar productos con precio > 300.
 - [ ] Identificar el producto con el menor precio.
 
-### 3. Sistema de Veterinaria (`veterinaria`)
+### 3. Sistema de Veterinaria (`📂 veterinaria`)
 Gestión de historial clínico, enfocada en la relación entre pacientes (mascotas) y sus tratamientos médicos.
 
 #### ✅ Actividades
@@ -47,7 +59,7 @@ Gestión de historial clínico, enfocada en la relación entre pacientes (mascot
 - [ ] Contar tratamientos de un paciente entre un rango de fechas.
 - [ ] Identificar al paciente con mayor actividad clínica.
 
-### 4. Gestor para torneo de tenis (`torneo_de_tenis`)
+### 4. Gestor para torneo de tenis (`📂 torneo_de_tenis`)
 Base de datos para gestionar a los participantes de un torneo de tenis, organizando por categorías
 
 #### ✅ Actividades
@@ -61,16 +73,32 @@ Base de datos para gestionar a los participantes de un torneo de tenis, organiza
 - [ ] Obtener los datos de los participantes que tengan entre 25 y 37 años.
 - [ ] Obtener la lista completa de inscripciones, especificando el nombre y apellido de cada uno de los inscritos.
 
+### 5. Sistema para gestionar los alumnos inscritos a una escuela de música (`📂 escuela_musica`)
+Diseño de una base de datos para el control de inscripciones de alumnos a diferentes cursos dentro de una escuela de música.
+
+#### ✅ Actividades
+- [x] Agregar al menos 30 alumnos (uso sugerido de un procedimiento almacenado).
+- [x] Agregar inscripciones de alumnos, pudiendo estar en más de un curso, o bien, no estar en ningún curso.
+- [ ] Listar todos los alumnos inscritos en el curso de "Guitarra Intermedio".
+- [ ] Mosrar todas las inscripciones realizadas después del 1 de marzo del 2026.
+- [ ] Contar la cantidad de alumnos que han abandonado la inscripción.
+- [ ] Listar los cursos disponibles para alumnos avanzados.
+- [ ] Listar los nombres y apellidos de los alumnos junto con los nombres de los cursos a los que están inscritos.
+- [ ] Mostrar el nombre del curso y la cantidad de alumnos inscritos en cada curso.
+- [ ] Listar el nombre y apellido de los alumnos que no han pagado su inscripcion, sin importar el curso.
+- [ ] Obtener el nombre de los cursos que tienen al menos un alumno menor a 10 años inscrito.
+- [ ] Listar el nombre y apellido de los alumnos junto con los nombres de los cursos que están inscritos, pero solo para aquellos que se inscribieron en febrero del 2026
+
 ---
 
-## 🚀 Próximamente...
+## 🚀 Próximamente 🚀
 
 > [!NOTE]
 > Este repositorio está en constante actualización. Próximamente se integrarán secciones de:
 
 * **Relaciones Muchos a Muchos:** Implementación de tablas intermedias.
-* **Consultas Avanzadas:** Uso intensivo de `JOINs` y Subconsultas.
-* **Lógica en BD:** Procedimientos almacenados (`Stored Procedures`) y Triggers.
+* **Lógica en BD:** `Triggers`.
 
 ---
+
 **Desarrollado por:** [ADJGC](https://www.linkedin.com/in/adjgc/)
