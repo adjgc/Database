@@ -91,14 +91,30 @@ Diseño de una base de datos para el control de inscripciones de alumnos a difer
 
 ---
 
+### 6. Sistema para gestionar socios de un gimansio (`📂 gimnasio`)
+Diseño de una base de datos con relación de muchos a muchos.
+
+#### ✅ Actividades
+- [x] Obtener el nombre de todos los socios ordenados de la Z a la A.
+- [x] ¿Cuántas clases ofrece el gimnasio en total?
+- [x] Obtener el nombre de todas las clases que se imparten antes de las 09:00:00.
+- [ ] Obtener el nombre del socio, el nombre de la o las clases en las que está inscrito y la fecha que se inscribió.
+- [ ] Listar el nombre de todos los socios que estén inscritos exclusivamente en Cardio Avanzado
+- [ ] Tomar un ID de socio al azar, mostrar su nombre, el nombre de la clase y el horario de las clases en las que está inscrito.
+- [ ] Obtener el nombre de cada clase y cuántos socios tiene inscritos, ordenar de la más llena a la más vacía.
+- [ ] Encuentra el nombre de todos los socios que se han inscrito en más de 2 clases.
+- [ ] Contar el número de socios inscrítos en todas las clases de nivel 'Avanzado'.
+- [ ] Encontrar a los socios (si existen) que estén inscritos en el gimnasio pero no se hayan registrado a ninguna clase.
+
+---
+
 ## 🚀 Próximamente 🚀
 
 > [!NOTE]
 > Este repositorio está en constante actualización. Próximamente se integrarán secciones de:
 
-* **Relaciones Muchos a Muchos:** Implementación de tablas intermedias.
 * **Lógica en BD:** `Triggers`.
 
 ---
 
-**Desarrollado por:** [ADJGC](https://www.linkedin.com/in/adjgc/)
+**Desarrollado con 🤍 por:** [ADJGC](https://www.linkedin.com/in/adjgc/)
