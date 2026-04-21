@@ -91,8 +91,8 @@ Diseño de una base de datos para el control de inscripciones de alumnos a difer
 
 ---
 
-### 5. Sistema para gestionar los alumnos inscritos a una escuela de música (`📂 escuela_musica`)
-Diseño de una base de datos para el control de inscripciones de alumnos a diferentes cursos dentro de una escuela de música.
+### 6. Sistema para gestionar socios de un gimansio (`📂 gimnasio`)
+Diseño de una base de datos con relación de muchos a muchos.
 
 #### ✅ Actividades
 - [x] Obtener el nombre de todos los socios ordenados de la Z a la A.
@@ -117,4 +117,4 @@ Diseño de una base de datos para el control de inscripciones de alumnos a difer
 
 ---
 
-**Desarrollado por:** [ADJGC](https://www.linkedin.com/in/adjgc/)
+**Desarrollado con 🤍 por:** [ADJGC](https://www.linkedin.com/in/adjgc/)
