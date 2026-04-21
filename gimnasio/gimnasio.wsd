@@ -1,0 +1,36 @@
+@startuml GIMNASIO
+
+title "Diagrama Entidad-Relación (DER) - Gimnasio"
+
+hide circle
+
+entity "Socios" as socios {
+    id_socio: INTEGER <<PK>>
+    --
+    nombre: VARCHAR(255)
+    fecha_registro: DATE
+}
+
+entity "Clases" as clases {
+    id_calse: INTEGER <<PK>>
+    --
+    nombre: VARCHAR(255)
+    horario: TIME
+}
+
+entity "Socios_Clases" as socios_clases {
+    id_socios_clases: INTEGER <<PK>>
+    --
+    id_socio: INTEGER <<FK>>
+    id_clase: INTEGER <<FK>>
+    fecha_inscripcion: DATE
+}
+
+'Relacion muchos a muchos
+'Un socio puede estar en muchas clases
+socios "1" --- "n" socios_clases
+'Una clase puede tener muchos socios
+clases "1" --- "n" socios_clases
+
+
+@enduml
