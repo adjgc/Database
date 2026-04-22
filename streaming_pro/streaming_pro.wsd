@@ -1,0 +1,53 @@
+@startuml STREAMING_PRO
+
+title "Diagrama Entidad-Relación (DER) - Streaming Pro"
+
+hide circle
+
+entity "Usuarios" as usuarios {
+    id_usuario: INTEGER <<PK>>
+    ---
+    nombre: VARCHAR(255)
+    email: VARCHAR(255)
+}
+
+entity "Perfiles premium" as perfiles_premium {
+    id_perfiles_premium: INTEGER <<PK>>
+    ---
+    fecha_vencimiento: DATE
+    tipo_suscripcion: VARCHAR(255)
+    fk_id_usuario: INTEGER <<FK>> <<U>>
+}
+
+entity "Contenido" as contenido {
+    id_contenido: INTEGER <<PK>>
+    ---
+    titulo: VARCHAR(255)
+    duracion: INTEGER
+    fk_id_genero: INTEGER <<FK>>
+}
+
+entity "Generos" as generos {
+    id_genero: INTEGER <<PK>>
+    ---
+    nombre: VARCHAR(255)
+}
+
+entity "Historial vistas" as historial_vistas{
+    id_historial_vistas: INTEGER <<PK>>
+    ---
+    fk_id_usuario: INTEGER <<FK>>
+    fk_id_contenido: INTEGER <<FK>>
+    fecha_visto: DATE
+}
+
+'Un usuario puede tener un perfil premium y un perfil premium corresponde a un usuario
+usuarios "1" --- "1" perfiles_premium
+'Un genero puede tener mucho contenido y un contenido pertenece a solo un tipo de genero
+generos "1" --- "N" contenido
+'Un usuario puede ver mucho contenido
+usuarios "1" --- "N" historial_vistas
+'Un contenido puede ser visto por muchos usuarios
+contenido "1" --- "N" historial_vistas
+
+@enduml
