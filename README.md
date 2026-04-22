@@ -106,6 +106,16 @@ Diseño de una base de datos con relación de muchos a muchos.
 - [ ] Contar el número de socios inscrítos en todas las clases de nivel 'Avanzado'.
 - [ ] Encontrar a los socios (si existen) que estén inscritos en el gimnasio pero no se hayan registrado a ninguna clase.
 
+### 7. Plataforma de Streaming (`📂 streaming_pro`)
+Modelado y diseño de una base de datos de alto nivel.
+
+#### ✅ Actividades
+- [x] Listar a todos los usuarios y su tipo de suscripcion, si no cuenta con suscripcion premium debe ponerse como "GRATUITO"
+- [ ] Encuentra los titulos de las 3 películas o series más vistas en la plataforma, mostrando cuántas veces han sido reproducidos
+- [ ] Calcular el tiempo que un usuario en específico ha pasado viendo series o peliculas en Streaming Pro
+- [ ] Muestra el nombre de los generos que no tiene ningun contenido asociado
+- [ ] Mostrar el nombre y correo de los usuarios que han visto al menos 3 generos diferentes
+
 ---
 
 ## 🚀 Próximamente 🚀
