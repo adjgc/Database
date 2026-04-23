@@ -1,0 +1,59 @@
+@startuml GLOBAL_EXPRESS
+
+title "Diagrama Entidad-Relación (DER) - Global Express"
+hide circle
+
+entity "Clientes" as clientes {
+    id_cliente: INTEGER <<PK>>
+    ---
+    nombre: VARCHAR(255)
+    pais_origen: VARCHAR(255)
+}
+
+entity "Envios" as envios {
+    id_envio: INTEGER <<PK>>
+    ---
+    peso_kg: DOUBLE
+    fecha_despacho: DATE
+    fk_id_cliente: INTEGER <<FK>>
+}
+
+entity "Camiones" as camiones {
+    id_camion: INTEGER <<PK>>
+    ---
+    placa: VARCHAR(255)
+    capacidad_max_kg: DOUBLE
+}
+
+entity "Conductores" as conductores {
+    id_conductor: INTEGER <<PK>>
+    ---
+    nombre: VARCHAR(255)
+    fk_id_camion: INTEGER <<FK>> <<U>>
+}
+
+entity "Ruta envios" as ruta_envios {
+    id_ruta_envios: INTEGER <<PK>>
+    ---
+    ciudad_destino: VARCHAR(255)
+    fk_id_envio: INTEGER <<FK>>
+    fk_id_camion: INTEGER <<FK>>
+}
+
+'Un cliente solicita muchos envios 1:N
+'Un envio es solicitado por un cliente 1:1
+'-> 1:N
+clientes "1" --- "N" envios
+
+'Un conductor maneja un camion 1:1
+'Un camion es manejado por un conductor 1:1
+'-> 1:1
+conductores "1" --- "1" camiones
+
+'Un camion realiza muchos envios 1:N
+'Un envio puede ser realizado por muchos camiones 1:N
+'-> N:N
+camiones "1" --- "N" ruta_envios
+envios "1" --- "N" ruta_envios
+
+@enduml
