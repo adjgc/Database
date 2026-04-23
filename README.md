@@ -118,6 +118,12 @@ Modelado y diseño de una base de datos de alto nivel.
 
 ---
 
+### 8. Gestión de envíos y paqueteria (`📂 global_express`)
+Modelado y diseño de una base de datos de alto nivel.
+
+#### ✅ Actividades
+- [x] Muestra el nombre del conductor y la patente de su camión, pero solo de aquellos conductores que han transportado envíos de clientes que viven en un país diferente al país de destino de la ruta
+
 ## 🚀 Próximamente 🚀
 
 > [!NOTE]
