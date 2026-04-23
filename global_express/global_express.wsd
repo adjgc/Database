@@ -35,7 +35,7 @@ entity "Conductores" as conductores {
 entity "Ruta envios" as ruta_envios {
     id_ruta_envios: INTEGER <<PK>>
     ---
-    ciudad_destino: VARCHAR(255)
+    pais_destino: VARCHAR(255)
     fk_id_envio: INTEGER <<FK>>
     fk_id_camion: INTEGER <<FK>>
 }
