@@ -2,7 +2,7 @@
 
 Este repositorio contiene una colección de ejercicios y prácticas sobre modelado de bases de datos, diseño de **Diagramas Entidad-Relación (DER)** y sentencias **SQL**.
 
-El objetivo es documentar mi proceso de aprendizaje y mantener una referencia técnica de los ejercicios realizados durante el desarrollo de mi portafolio.
+El objetivo es documentar el proceso de avance para el curso de Bases de Datos Relacionales.
 
 ---
 
@@ -122,14 +122,22 @@ Modelado y diseño de una base de datos de alto nivel.
 Modelado y diseño de una base de datos de alto nivel.
 
 #### ✅ Actividades
-- [x] Muestra el nombre del conductor y la placa de su camión, pero solo de aquellos conductores que han transportado envíos de clientes que viven en un país diferente al país de destino de la ruta
+- [x] Muestra el nombre del conductor y la placa de su camión, pero solo de aquellos conductores que han transportado envíos de clientes que viven en un país diferente al país de destino de la ruta.
+
+---
+
+### 9. Gestión de envíos y paqueteria - Triggers (`📂 global_express`)
+Integración de triggers en la base de datos del ejercicio 8.
+
+#### ✅ Actividades
+- [x] Definir una nueva tabla de auditorias para los envíos.
+- [ ] Por cada envío nuevo que se crea, crear un nuevo registro relacionado en la tabla de auditorias.
 
 ## 🚀 Próximamente 🚀
 
 > [!NOTE]
-> Este repositorio está en constante actualización. Próximamente se integrarán secciones de:
-
-* **Lógica en BD:** `Triggers`.
+> Este repositorio está en constante actualización.
+> Próximamente se integrarán nuevos ejercicios de nivel medio-avanzado.
 
 ---
 
