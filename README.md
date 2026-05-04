@@ -132,6 +132,8 @@ Integración de triggers en la base de datos del ejercicio 8.
 #### ✅ Actividades
 - [x] Definir una nueva tabla de auditorias para los envíos.
 - [ ] Por cada envío nuevo que se crea, crear un nuevo registro relacionado en la tabla de auditorias.
+- [ ] Bloquear la acción de eliminar registros de la tabla envios.
+- [ ] En la tabla de auditorias, actualizar todo cambio de ruta sobre los envíos registrados.
 
 ## 🚀 Próximamente 🚀
 
