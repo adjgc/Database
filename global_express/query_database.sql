@@ -38,6 +38,14 @@ create table ruta_envios(
     foreign key (fk_id_camion) references camiones(id_camion)
 );
 
+create table auditorias_envios(
+    id_auditorias_envios int primary key auto_increment not null,
+    mensaje varchar(255) not null,
+    fecha_registro datetime default(current_timestamp),
+    fk_id_envio integer not null,
+    foreign key (fk_id_envio) references envios(id_envio)
+);
+
 
 insert into clientes (nombre, pais_origen) values
 ('Mario Mario', 'Israel'),

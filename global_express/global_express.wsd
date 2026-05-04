@@ -40,6 +40,14 @@ entity "Ruta envios" as ruta_envios {
     fk_id_camion: INTEGER <<FK>>
 }
 
+entity "Auditorias entregas" as auditorias_entregas {
+    id_auditoria_entregas: INTEGER <<PK>>
+    ---
+    mensaje: VARCHAR(255)
+    fecha_registro: DATETIME
+    fk_id_envio: INTEGER <<FK>>
+}
+
 'Un cliente solicita muchos envios 1:N
 'Un envio es solicitado por un cliente 1:1
 '-> 1:N
@@ -55,5 +63,10 @@ conductores "1" --- "1" camiones
 '-> N:N
 camiones "1" --- "N" ruta_envios
 envios "1" --- "N" ruta_envios
+
+'Un envio tiene una auditoria 1:1
+'Una auditoria se realiza sobre un envio 1:1
+'-> 1:1
+envios "1" --- "1" auditorias_entregas
 
 @enduml
